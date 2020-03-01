@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './plugins/element.js'
+import './assets/css/global.less'
+import 'element-ui/lib/theme-chalk/base.css'
 // eslint-disable-next-line no-unused-vars
 import Axios from 'axios'
 
