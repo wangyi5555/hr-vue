@@ -1,28 +1,26 @@
 <template>
+<!--  <div id="app">-->
+<!--    <img src="./assets/logo.png">-->
+<!--    <div>-->
+<!--      <p>-->
+<!--        If Element is successfully added to this project, you'll see an-->
+<!--        <code v-text="'<el-button>'"></code>-->
+<!--        below-->
+<!--      </p>-->
+<!--      <el-button  @click="test1()">el-button</el-button>-->
+<!--    </div>-->
+<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+<!--  </div>-->
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button  @click="test1()">el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  },
   created () {
-    this.test1()
+    // this.test1()
   },
   methods: {
     test1: function () {
@@ -36,11 +34,6 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ height: 100%;
 }
 </style>
